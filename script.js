@@ -6,6 +6,9 @@ const navbar = document.querySelector('.navbar')
 const menuBtn = document.querySelector('#menu-btn')
 const login = document .querySelector('.loginForm')
 const register = document .querySelector('.registerForm')
+// const loginBtn= document.querySelector('#loginBtn')
+const userBtn= document.querySelector('#user-btn')
+var logCount=0;
 const Menu =[
     {
         name:"6 Mini Pizza",
@@ -28,7 +31,10 @@ const Menu =[
         img:"images/meatball-burger.jpg",
     }
     
-]
+];
+if (logCount>0){
+    userBtn.style.display="";
+}
 
 
 
@@ -58,6 +64,12 @@ menuBtn.addEventListener('click', ()=>{
         }
     })
 })
+
+// loginBtn.addEventListener('click', ()=>{
+//     logCount=logCount+1;    
+// })
+
+
 
 function showLogin(){
     register.style.display="none";
