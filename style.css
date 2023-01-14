@@ -85,7 +85,7 @@ a{
     padding: 3rem;
     background-color: #fff;
     border-radius: 3rem 2rem;
-    min-height: 60rem;
+    min-height: 50rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -289,12 +289,13 @@ a{
 }
 
 .menu img{
-    height: 500px;
+    height: 250px;
     width: 100%;
+    object-fit: cover;
 }
 
 .products img{
-    height: 500px;
+    height: 285px;
     width: 100%;
 }
 
@@ -310,7 +311,7 @@ a{
 
 .menu .box-container .box h3{
     font-size: 3rem;
-    padding: 1rem 0;
+    padding: 0.1rem 0;
 }
 
 .menu .box-container .box .price{
@@ -321,6 +322,14 @@ a{
 .menu .box-container .box .price span{
     text-decoration: line-through;
     font-size: 1.5rem;
+}
+
+.menu .box-container .box{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
 }
 /* ------------------------------------------MENU SECTION */
 
@@ -374,6 +383,14 @@ a{
 .products .box-container  .box-bottom .product-btn a i{
     font-size: 1.6rem;
     color: var(--main-color);
+}
+
+.products .box-container .box{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /* ------------------------------------------PRODUCTS SECTION */
