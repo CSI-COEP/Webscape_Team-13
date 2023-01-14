@@ -117,3 +117,15 @@ function addToCart(idstr) {
     setTimeout(() => {alertBox.style.display = "none"}, 2000);
 
 }
+
+var mainTag = document.getElementById("mainTag");
+var loginPopup = document.getElementById("loginMainContainer");
+
+function showPopup(){
+    loginPopup.style.display = "flex";
+    mainTag.classList.toggle('blur')
+}
+function hidePopup(){
+    loginPopup.style.display = "none";
+    mainTag.classList.toggle('blur')
+}
