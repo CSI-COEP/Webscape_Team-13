@@ -12,6 +12,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>#</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <main id="mainTag">
     <header class="header">
@@ -54,7 +55,7 @@
             <input type="text" class="search-input" id="search-box" placeholder="Search">
             <i class="fas fa-search"></i>
         </div>
-        <div class="cart-items-container" id="cartContainer"> 
+        <div class="cart-items-container" id="cartContainer">
             <ul id="cartContainerList"></ul>
             <div class="emptyCart" id="emptyCart">
                 <h2>There is nothing to see here!</h2>
@@ -64,8 +65,8 @@
     </header>
     <section class="home" id="home">
         <div class="content">
-            <h3>Fast Food Delivery</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perferendis obcaecati iste voluptatum,
+            <h3 data-aos="slide-right">Fast Food Delivery</h3>
+            <p data-aos="fade-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perferendis obcaecati iste voluptatum,
                 quaerat nihil magnam numquam sint? </p>
             <h1 class="btn" onclick="showPopup()">order now</h1>
         </div>
@@ -220,10 +221,7 @@
         <h1 class="heading">customer's <span>review</span> </h1>
         <div>
             <div class="box">
-                <img src="./image/pngwing.com (8).png" alt="quote">
-                <p> Dicta totam suscipit vero praesentium excepturi facilis, fuga at architecto dolor tempora molestias
-                    quam dignissimos sit. Molestiae temporibus ratione quas placeat possimus!</p>
-                <img src="./image/pngwing.com (9).png" alt="customer-avatar" class="user">
+                <img src="images/cutomers.jpg" alt="customer-avatar" class="user">
                 <h3>Patrick Hellinger</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -232,12 +230,11 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
+                <p> Dicta totam suscipit vero praesentium excepturi facilis, fuga at architecto dolor tempora molestias
+                    quam dignissimos sit. Molestiae temporibus ratione quas placeat possimus!</p>
             </div>
             <div class="box">
-                <img src="./image/pngwing.com (8).png" alt="quote">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga at architecto dolor tempora molestias
-                    quam dignissimos sit. Molestiae temporibus ratione quas placeat possimus!</p>
-                <img src="./image/pngwing.com (10).png" alt="customer-avatar" class="user">
+                <img src="images/cutomers.jpg" alt="customer-avatar" class="user">
                 <h3>Serena Williams</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -246,12 +243,11 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga at architecto dolor tempora molestias
+                    quam dignissimos sit. Molestiae temporibus ratione quas placeat possimus!</p>
             </div>
             <div class="box">
-                <img src="./image/pngwing.com (8).png" alt="quote">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta totam suscipit vero praesentium
-                    excepturi facilis, fuga at architecto dolor tempora molestias quam dignissimos possimus!</p>
-                <img src="./image/pngwing.com (11).png" alt="customer-avatar" class="user">
+                <img src="images/cutomers.jpg" alt="customer-avatar" class="user">
                 <h3>Helen Marksen</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -260,6 +256,8 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta totam suscipit vero praesentium
+                    excepturi facilis, fuga at architecto dolor tempora molestias quam dignissimos possimus!</p>
             </div>
         </div>
     </section>
@@ -340,10 +338,12 @@
     </div>
 </div>
 
-
-
-
 <script src="./script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 
 </html>
