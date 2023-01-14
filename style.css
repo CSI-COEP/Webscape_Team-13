@@ -174,13 +174,14 @@ a{
 .header .navbar a{
     margin: 0 1rem;
     font-size: 1.6rem;
-    color: black;
+    color: #ffffff;
     border-bottom: 0.2rem solid transparent;
 }
 
 .header .navbar a.active,
 .header .navbar a:hover{
-    border-color: var(--main-color);
+    /* border-color: var(--main-color); */
+    border-color: #592D00;
     padding-bottom:.5rem ;
 }
 
