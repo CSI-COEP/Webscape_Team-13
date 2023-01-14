@@ -4,6 +4,29 @@ const cartItem = document.querySelector('.cart-items-container')
 const cartBtn = document.querySelector('#cart-btn')
 const navbar = document.querySelector('.navbar')
 const menuBtn = document.querySelector('#menu-btn')
+const Menu =[
+    {
+        name:"6 Mini Pizza",
+        prize:"$104.99",
+        img:"images/mini-pizzas.jpg",
+    },
+    {
+        name:"5 Mini Burgers",
+        prize:"$99.99",
+        img:"images/mini-burgers.jpg",
+    },
+    {
+        name:"2 Mixed Pizza",
+        prize:"$159.99",
+        img:"images/mixed-pizza.jpg",
+    },
+    {
+        name:"2 Meatball Burger",
+        prize:"$89.99",
+        img:"images/meatball-burger.jpg",
+    }
+    
+]
 
 
 
