@@ -68,3 +68,48 @@ function showRegister(){
     login.style.display="none";
 }
 
+// Cart Feature:
+
+var emptyCart = document.getElementById("emptyCart");
+var checkOutBtn = document.getElementById("checkOutBtn");
+
+var cartContainer = document.getElementById("cartContainer");
+var cartContainerList = document.getElementById("cartContainerList");;
+
+checkOutBtn.style.display = "none";
+
+function addToCart(idstr) {
+    var id = Number(idstr);
+    console.log(id)
+    var newEntry = document.createElement('li');
+    var newItem = document.createElement('div');
+    newItem.className = "cart-item";
+
+    var newItemImg = document.createElement('img');
+    newItemImg.src = Menu[id].img;
+
+    var newItemContent = document.createElement('div');
+    newItemContent.className = "content"
+
+    var newItemName = document.createElement('h3');
+    newItemName.textContent = Menu[id].name
+
+    var newItemPrice = document.createElement('div');
+    newItemPrice.className = "price"
+    newItemPrice.textContent = Menu[id].prize;
+
+
+    newItemContent.appendChild(newItemName);
+    newItemContent.appendChild(newItemPrice);
+
+    newItem.appendChild(newItemImg);
+    newItem.appendChild(newItemContent);
+
+    newEntry.appendChild(newItem);
+    cartContainerList.appendChild(newEntry);
+
+    emptyCart.style.display = "none";
+    checkOutBtn.style.display = "block";
+
+    alert("Added to the card");
+}
