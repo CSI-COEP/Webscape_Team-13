@@ -6,7 +6,7 @@ const navbar = document.querySelector('.navbar')
 const menuBtn = document.querySelector('#menu-btn')
 const login = document .querySelector('.loginForm')
 const register = document .querySelector('.registerForm')
-// const loginBtn= document.querySelector('#loginBtn')
+const loginBtn= document.querySelector('#loginBtn')
 const userBtn= document.querySelector('#user-btn')
 var logCount=0;
 const Menu =[
@@ -32,11 +32,6 @@ const Menu =[
     }
     
 ];
-if (logCount>0){
-    userBtn.style.display="";
-}
-
-
 
 searchBtn.addEventListener('click', ()=>{
     searchForm.classList.toggle('active');
@@ -65,11 +60,10 @@ menuBtn.addEventListener('click', ()=>{
     })
 })
 
-// loginBtn.addEventListener('click', ()=>{
-//     logCount=logCount+1;    
-// })
-
-
+function addUser() {
+    userBtn.style.display="";
+    logCount=logCount+1;   
+}
 
 function showLogin(){
     register.style.display="none";

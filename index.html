@@ -331,11 +331,11 @@
         </div>
         <div class="loginForm">
             <form action="" name="login">
-                <p>Username: <input type="text" name="username" placeholder="Enter Username" required="true" /></p>
-                <p>Password: <input type="text" name="password" placeholder="Enter Password" required="true" /></p>
+                <p>Username: <input type="text" name="username" placeholder="Enter Username" /></p>
+                <p>Password: <input type="text" name="password" placeholder="Enter Password" /></p>
             </form>
-            <div>
-                <button class="loginBtn">
+            <div class="btns">
+                <button class="loginBtn" type="submit" onclick="addUser()">
                     <p>Login</p>
                 </button>
                 <button class="closeBtn2" onclick="hidePopup()">
@@ -348,18 +348,18 @@
 
             <form action="" name="login">
                 <p>Enter Name: <input type="text" name="name" placeholder="Enter Full Name" required="true" /></p>
-                <p>Enter Address: <input type="text" name="address" placeholder="Enter Address" required="true" /></p>
+                <p>Email Address: <input type="text" name="address" placeholder="Enter Address" required="true" /></p>
                 <p>Set Username: <input type="text" name="username" placeholder="Enter Username" required="true" /></p>
                 <p>Set Password: <input type="text" name="password" placeholder="Enter Password" required="true" /></p>
             </form>
-            <div>
-                <button class="registerBtn">
-                    <p>Register</p>
-                </button>
-                <button class="closeBtn2" onclick="hidePopup()"></button>>
-                    <p>Close</p>
-                </button>
-            </div>
+                <div class="btns">
+                    <button type="submit" class="registerBtn">
+                        <p>Register</p>
+                    </button>
+                    <button class="closeBtn2" onclick="hidePopup()">
+                        <p>Close</p>
+                    </button>
+                </div>
         </div>
     </div>
 </div>
