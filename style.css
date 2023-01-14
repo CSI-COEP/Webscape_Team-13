@@ -193,16 +193,18 @@ a{
 }
 
 .header .cart-items-container{
+    display: none;
     position: absolute;
     top: 95%;
-    height: calc(100vh - 9rem);
+    /* height: calc(100vh - 9rem); */
     width: 35rem;
     background-color: #fff;
-    box-shadow: 0px 20px 14px 0px rgba(0 0 0 / 75%);
+    box-shadow: 1px 2px 2px 0px rgba(0 0 0 / 75%);
     right: -100%;
 }
 
 .header .cart-items-container.active{
+    display: block;
     right: 3rem;
 }
 
@@ -600,3 +602,76 @@ a{
 .footer .credit span{
     color: var(--main-color);
 }
+
+
+/* ------------------------------------------LOGIN SECTION */
+.loginMainContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginContainer{
+    height: 60vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+.loginContainer h1{
+    font-size: 36px;
+
+}
+.containerTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    /* padding: 20px ; */
+    background-color: #E7991D;
+    color: #ffffff;
+}
+.loginTitle, .registerTitle{
+    border: 1px solid white;
+    width: 50%;
+    height: 100%;  
+    padding: 18px 30px;  
+}
+.loginForm, .registerForm{
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    justify-content: center;
+    align-items: center;
+    /* align-items:; */
+}
+.loginContainer form p{
+    font-size: 25px;
+    padding: 20px;
+}
+.loginContainer input{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 10px;
+}
+.registerForm{
+    display: none;
+}
+
+.loginContainer button{
+    background-color: #E7991D;
+    margin-top: 20px;
+    height: 50px;
+    color: #ffffff;
+    font-size: 22px;
+}
+.loginContainer button p{
+    padding: 15px;
+}
+
+
