@@ -841,3 +841,16 @@ a {
     height: 100vh;
     overflow: hidden;
 }
+
+@media (max-width:950px) {
+    .header #menu-btn {
+        display: flex;
+    }  
+    .navbar{
+        display: none;
+
+    }
+    .buttons{
+        display: flex;
+    }
+}
