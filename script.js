@@ -4,6 +4,8 @@ const cartItem = document.querySelector('.cart-items-container')
 const cartBtn = document.querySelector('#cart-btn')
 const navbar = document.querySelector('.navbar')
 const menuBtn = document.querySelector('#menu-btn')
+const login = document .querySelector('.loginForm')
+const register = document .querySelector('.registerForm')
 const Menu =[
     {
         name:"6 Mini Pizza",
@@ -56,6 +58,15 @@ menuBtn.addEventListener('click', ()=>{
         }
     })
 })
+
+function showLogin(){
+    register.style.display="none";
+    login.style.display="flex";
+}
+function showRegister(){
+    register.style.display="flex";
+    login.style.display="none";
+}
 
 // Cart Feature:
 
