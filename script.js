@@ -34,3 +34,11 @@ menuBtn.addEventListener('click', ()=>{
     })
 })
 
+var cartContainer = document.getElementById("cartContainer")
+var cartContainerList = document.getElementById("cartContainerList")
+
+function addToCard(id) {
+    var newItem = document.createElement('li');
+    newItem.appendChild(document.createTextNode('New Item'))
+    cartContainerList.appendChild(newItem);
+}

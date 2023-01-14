@@ -104,7 +104,7 @@ a{
 ::-webkit-scrollbar{
     height: 0.5rem;
     width: 1rem;
-    background-color: rgb(7, 126, 182);
+    background-color: rgb(172, 181, 190);
 }
 
 ::-webkit-scrollbar-track{
@@ -247,6 +247,14 @@ a{
 
 .header #menu-btn{
     display: none;
+}
+
+.emptyCart{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* ------------------------------------------HEADER SECTION */
 
