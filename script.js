@@ -8,6 +8,8 @@ const login = document .querySelector('.loginForm')
 const register = document .querySelector('.registerForm')
 const loginBtn= document.querySelector('#loginBtn')
 const userBtn= document.querySelector('#user-btn')
+const profile= document.querySelector('.profile')
+
 var logCount=0;
 const Menu =[
     {
@@ -56,6 +58,15 @@ menuBtn.addEventListener('click', ()=>{
     document.addEventListener('click', (e)=>{
         if(!e.composedPath().includes(navbar) && !e.composedPath().includes(menuBtn) ){
             navbar.classList.remove('active');
+        }
+    })
+})
+
+userBtn.addEventListener('click', ()=>{
+    profile.classList.toggle('active');
+    document.addEventListener('click', (e)=>{
+        if(!e.composedPath().includes(profile) && !e.composedPath().includes(profile) ){
+            profile.classList.remove('active');
         }
     })
 })
