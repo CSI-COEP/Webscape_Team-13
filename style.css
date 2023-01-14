@@ -384,7 +384,7 @@ a{
 }
 .about .row .image img{
     height: 50rem;
-    object-fit: contain;
+    object-fit: cover;
 }
 /* img  genel olarak düzenlendi */
 
@@ -445,6 +445,8 @@ a{
     background-color: var(--black-color);
     flex-wrap: wrap;
     gap: 1rem;
+    border-radius: 30px;
+
 }
 
 .contact .row .map{
