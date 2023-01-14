@@ -62,6 +62,8 @@ menuBtn.addEventListener('click', ()=>{
 var emptyCart = document.getElementById("emptyCart");
 var checkOutBtn = document.getElementById("checkOutBtn");
 
+var alertBox = document.getElementById("alertBox");
+
 var cartContainer = document.getElementById("cartContainer");
 var cartContainerList = document.getElementById("cartContainerList");;
 
@@ -100,5 +102,7 @@ function addToCart(idstr) {
     emptyCart.style.display = "none";
     checkOutBtn.style.display = "block";
 
-    alert("Added to the card");
+    alertBox.style.display = "flex";
+    setTimeout(() => {alertBox.style.display = "none"}, 2000);
+
 }

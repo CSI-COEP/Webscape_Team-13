@@ -17,7 +17,7 @@
 :root{
     --border:1px solid black;
     --main-color: #ffffff;
-    --black-color: #E7991D;
+    --golden-color: #E7991D;
 }
 
 html{
@@ -44,7 +44,7 @@ img{
 
 a{
     text-decoration: none;
-    color: var(--black-color);
+    color: var(--golden-color);
 }
 
 .btn{
@@ -54,7 +54,7 @@ a{
     border-radius: 30px;
     font-size: 1.7rem;
     color:black;
-    background-color: var(--black-color);
+    background-color: var(--golden-color);
     cursor: pointer;
 }
 
@@ -72,7 +72,7 @@ a{
 
 .heading span{
     text-transform: uppercase;
-    color: var(--black-color);
+    color: var(--golden-color);
 }
 
 .box-container{
@@ -95,7 +95,7 @@ a{
 
 .search-input{
     font-size: 1.6rem;
-    color: var(--black-color);
+    color: var(--golden-color);
     padding: 1rem;
     text-transform: none;
     border-radius: 3rem;
@@ -159,7 +159,7 @@ a{
     cursor: pointer;
     font-size: 2.2rem;
     margin-right: 1.5rem;
-    color: var(--black-color);
+    color: var(--golden-color);
 }
 .header .search-form input{
     width: 100%;
@@ -223,13 +223,13 @@ a{
 }
 .header .cart-items-container .cart-item .content h3{
     font-size: 2rem;
-    color: var(--black-color);
+    color: var(--golden-color);
     padding: 0.5rem;
 }
 
 .header .cart-items-container .cart-item .content .price{
     font-size: 1.5rem;
-    color: var(--black-color);
+    color: var(--golden-color);
 }
 .header .cart-items-container .cart-item .fa-times{
     position: absolute;
@@ -237,7 +237,7 @@ a{
     right: 1.5rem;
     font-size: 2rem;
     cursor: pointer;
-    color: var(--black-color);
+    color: var(--golden-color);
 }
 .header .cart-items-container .btn{
     width: 100%;
@@ -459,7 +459,7 @@ a{
 /* ------------------------------------------CONTACT SECTION */
 .contact .row{
     display: flex;
-    background-color: var(--black-color);
+    background-color: var(--golden-color);
     flex-wrap: wrap;
     gap: 1rem;
     border-radius: 30px;
@@ -556,7 +556,7 @@ a{
 
 /* ------------------------------------------FOOTER SECTION */
 .footer {
-    background-color: var(--black-color);
+    background-color: var(--golden-color);
     text-align: center;
 }
 
@@ -610,7 +610,7 @@ a{
 }
 
 .footer .links a:hover{
-    background-color: var(--black-color);
+    background-color: var(--golden-color);
     opacity: 0.7;
     
 }
@@ -625,3 +625,46 @@ a{
 .footer .credit span{
     color: var(--main-color);
 }
+
+/* custom alert box */
+.alertBox {
+    padding: 15px;
+    background-color: var(--golden-color);
+    color: black;
+    position: fixed;
+    top: 150px;
+    right: 10px;
+    width: 300px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    font-size: 16px;
+    display: none;
+    animation: alert 0.5s ease;
+  }
+
+  @keyframes alert {
+    0%{
+        right: -100%;
+    }
+    100%{
+        right: 0;
+    }
+  }
+  
+  .closeBtn {
+    margin-left: 15px;
+    color: black;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closeBtn:hover {
+    color: black;
+  }
